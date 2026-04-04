@@ -17,4 +17,8 @@ public class Pedido {
         this.cliente = cliente; // Asigna el cliente recibido
         this.plato = plato; // Asigna el plato recibido
     }
+    // Método para mostrar el pedido
+    public String mostrar() {
+        return cliente + " pidió " + plato; // Retorna descripción del pedido
+    }
 }
