@@ -15,4 +15,8 @@ public class Plato {
         this.nombre = nombre; // Asigna el nombre recibido
         this.precio = precio; // Asigna el precio recibido
     }
+      // Método para mostrar el plato
+    public String mostrar() {
+        return nombre + " - $" + precio; // Retorna texto del plato
+    }
 }
