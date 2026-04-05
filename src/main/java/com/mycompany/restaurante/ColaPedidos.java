@@ -1,13 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.restaurante;
 
-/**
- *
- * @author anair
- */
-public class ColaPedidos {
+import com.murcia.utils.ColaEnlazada;
+
+class ColaPedidos extends ColaEnlazada<Pedido> { //clase que hereda de ColaEnlazada
     
+    public void agregarPedido(Pedido p){ //metodo para agregar pedido a la cola
+        encolar (p); //para agregarlo
+    }
 }
