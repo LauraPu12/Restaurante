@@ -1,7 +1,6 @@
 
 package com.mycompany.restaurante;
 
-
 public class Pedido {
     
     String cliente; // Nombre del cliente
@@ -9,7 +8,6 @@ public class Pedido {
 
     // Constructor vacío
     public Pedido() {
-        // No inicializa atributos
     }
 
     // Constructor con parámetros

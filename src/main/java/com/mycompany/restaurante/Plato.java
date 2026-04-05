@@ -7,7 +7,7 @@ public class Plato {
 
     // Constructor vacío
     public Plato() {
-        // No inicializa valores
+
     }
 
     // Constructor con parámetros
@@ -15,8 +15,8 @@ public class Plato {
         this.nombre = nombre; // Asigna el nombre recibido
         this.precio = precio; // Asigna el precio recibido
     }
-      // Método para mostrar el plato
+      // Método mostrar el plato
     public String mostrar() {
-        return nombre + " - $" + precio; // Retorna texto del plato
+        return nombre + " - $" + precio; // Retorna texto del plato con nombre y precio
     }
 }
