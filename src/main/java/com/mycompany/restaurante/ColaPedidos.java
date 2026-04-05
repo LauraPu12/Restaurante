@@ -2,6 +2,7 @@
 package com.mycompany.restaurante;
 
 import com.murcia.utils.ColaEnlazada;
+import com.murcia.utils.Nodo;
 
 class ColaPedidos extends ColaEnlazada<Pedido> { //clase que hereda de ColaEnlazada
     
@@ -15,9 +16,9 @@ class ColaPedidos extends ColaEnlazada<Pedido> { //clase que hereda de ColaEnlaz
         Nodo<Pedido> actual =head; //desde el primero
         
         while(actual!=null){ //recorrer la cola
-            Pedido p = actual.get(); //obtener el pedido
+            Pedido p = actual.getData(); //obtener el pedido
             System.out.println(p.mostrar()); //imprimir el pedido
-            actual = actual.get();// avanza al siguiente nodo
+            actual = actual.getNext();// avanza al siguiente nodo
         }
     }
 }
