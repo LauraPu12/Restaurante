@@ -14,4 +14,9 @@ public class PilaHistorial {
         nd.setNext(cima); //el nuevo nodo apunta al anterior
         cima = nd;//el nuevo es la cima
     }
+    public Pedido pop(){ //mrotdo para sacar el ultimo pedido
+        if (cima ==null){ //si esta vacio
+            return null; //no saca nada
+        }
+    }
 }
