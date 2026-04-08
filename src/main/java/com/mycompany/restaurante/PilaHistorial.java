@@ -22,6 +22,14 @@ public class PilaHistorial {
             primero = primero.getNext(); //mueve el primero al siguiente nodo
             return p;//devuelve el pedido que se elimino
         }
+    }
+    public void mostrarHistorial(){ //metodo para mostrar el historial
+        Nodo<Pedido> ahora = primero;//empieza desde el primer pedido
         
+        while(ahora!=null){//recorrer la pila con while
+            Pedido p=ahora.getData(); //tener el pedido
+            System.out.println(p.mostrar());//imprimir el pedido
+            ahora=ahora.getNext();//continua con el siguiente
+        }
     }
 }
