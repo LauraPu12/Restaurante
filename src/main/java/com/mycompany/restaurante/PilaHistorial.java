@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.restaurante;
 
-/**
- *
- * @author anair
- */
+import com.murcia.utils.Nodo;
+
 public class PilaHistorial {
+    Nodo<Pedido> cima; //nodo de encima de la pila
     
+    public PilaHistorial(){
+        cima = null; //constructor vacio
+    }
 }
