@@ -42,7 +42,15 @@ public class Restaurante {
             System.out.println("No hay pedidos en la cola"); // mensaje si está vacía
         }
     }
+    
+    // Método para mostrar pedidos pendientes
+    public void mostrarPedidos(){
+        cola.mostrarPedidos(); // muestra la cola
+    }
 
-
+    // Método para mostrar historial de pedidos
+    public void mostrarHistorial(){
+        historial.mostrarHistorial(); // muestra la pila
+    }
 
 }
