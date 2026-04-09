@@ -1,16 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-//intento numero 1
-package com.mycompany.restaurante;
 
-/**
- *
- * @author anair
- */
+package com.mycompany.restaurante;
+import java.util.Scanner; // permite leer datos del usuario
+
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner sc = new Scanner(System.in); // objeto para leer teclado
+        Restaurante r = new Restaurante(); // crea el restaurante
+        
     }
 }
