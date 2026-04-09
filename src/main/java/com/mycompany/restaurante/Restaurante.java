@@ -15,5 +15,11 @@ public class Restaurante {
         historial = new PilaHistorial(); // crea el historial
         
     }
+        
+    // Método para agregar un plato al menú
+    public void agregarPlato(Plato p){
+        menu.agregarPlato(p); // usa el método de ListaMenu
+    }
+
 
 }
