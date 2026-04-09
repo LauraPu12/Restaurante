@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.restaurante;
 
-/**
- *
- * @author anair
- */
+
 public class Restaurante {
-    
+        
+        ListaMenu menu; // lista que guarda los platos
+        ColaPedidos cola; // cola de pedidos pendientes
+        PilaHistorial historial; // pila con pedidos atendidos
+
+         // Constructor del restaurante
+        public Restaurante(){
+        menu = new ListaMenu(); // crea el menú
+        cola = new ColaPedidos(); // crea la cola de pedidos
+        historial = new PilaHistorial(); // crea el historial
+        
+    }
+
 }
