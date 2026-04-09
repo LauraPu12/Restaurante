@@ -37,8 +37,10 @@ public class Restaurante {
 
         if(p != null){ // si sí había pedido
             historial.push(p); // lo guarda en el historial
+            System.out.println("-----------------------------");
             System.out.println("Pedido atendido: " + p.mostrar()); // muestra el pedido
         }else{
+            System.out.println("-----------------------------");
             System.out.println("No hay pedidos en la cola"); // mensaje si está vacía
         }
     }

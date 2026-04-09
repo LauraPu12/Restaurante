@@ -22,10 +22,14 @@ public class Main {
             System.out.println("0. Salir");
 
             opcion = sc.nextInt(); // lee la opción
+           
             sc.nextLine(); // limpia buffer
             
             switch(opcion){
+                
                 case 1:
+                    
+                    System.out.println("-----------------------------");
                     System.out.println("Nombre del plato:");
                     String nombre = sc.nextLine(); // lee nombre
                     System.out.println("Precio:");
@@ -36,6 +40,7 @@ public class Main {
                     r.mostrarMenu(); // muestra menú
                 break;
                 case 3:
+                    System.out.println("-----------------------------");
                     System.out.println("Nombre del cliente:");
                     String cliente = sc.nextLine(); // lee cliente
 
