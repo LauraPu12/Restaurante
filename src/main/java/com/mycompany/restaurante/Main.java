@@ -23,6 +23,38 @@ public class Main {
 
             opcion = sc.nextInt(); // lee la opción
             sc.nextLine(); // limpia buffer
+            
+            switch(opcion){
+                case 1:
+                    System.out.println("Nombre del plato:");
+                    String nombre = sc.nextLine(); // lee nombre
+                    System.out.println("Precio:");
+                    double precio = sc.nextDouble(); // lee precio
+                    r.agregarPlato(new Plato(nombre,precio)); // agrega plato
+                break;
+                case 2:
+                    r.mostrarMenu(); // muestra menú
+                break;
+                case 3:
+                    System.out.println("Nombre del cliente:");
+                    String cliente = sc.nextLine(); // lee cliente
+
+                    System.out.println("Plato:");
+                    String plato = sc.nextLine(); // lee plato
+
+                    r.hacerPedido(new Pedido(cliente,plato)); // crea pedido
+                break;
+                case 4:
+                    r.atenderPedido(); // atiende el pedido
+                break;
+                case 5:
+                    r.mostrarPedidos(); // muestra pedidos en cola
+                break;
+                case 6:
+                    r.mostrarHistorial(); // muestra historial
+                break;
+
+            }
 
     
 
