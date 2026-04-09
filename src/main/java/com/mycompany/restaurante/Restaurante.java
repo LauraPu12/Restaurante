@@ -20,6 +20,17 @@ public class Restaurante {
     public void agregarPlato(Plato p){
         menu.agregarPlato(p); // usa el método de ListaMenu
     }
+    
+    // Método para mostrar el menú
+    public void mostrarMenu(){
+        menu.mostrarMenu(); // muestra todos los platos
+    }
+
+    // Método para agregar un pedido
+    public void hacerPedido(Pedido p){
+        cola.agregarPedido(p); // agrega el pedido a la cola
+    }
+
 
 
 }
