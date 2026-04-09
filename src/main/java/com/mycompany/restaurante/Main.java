@@ -51,7 +51,7 @@ public class Main {
                     r.mostrarHistorial(); // muestra pila
                 break;
             }
-        }
+        } while(opcion != '7'); // repetir hasta salir
     }
    }
         
