@@ -53,5 +53,10 @@ public class Main {
 
                     r.mostrarPedidos(); // mostrar cola
                 break;
+                case 6: // mostrar historial
+
+                    r.mostrarHistorial(); // mostrar pila
+                break;
+            }
    
 }
