@@ -44,6 +44,14 @@ public class Main {
 
                     r.hacerPedido(new Pedido(cliente,plato)); // crear pedido
                 break;
+                case 4: // atender pedido
 
+                    r.atenderPedido(); // atender primero de la cola
+                break;
+
+                case 5: // mostrar pedidos
+
+                    r.mostrarPedidos(); // mostrar cola
+                break;
    
 }
