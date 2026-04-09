@@ -36,12 +36,22 @@ public class Main {
                  case '2': // mostrar menú
                     r.mostrarMenu(); // imprime menú
                 break;
-
                 case '3': // hacer pedido
                     String cliente = Input.nextLine("Nombre cliente: "); // leer cliente
                     String plato = Input.nextLine("Plato: "); // leer plato
                     r.hacerPedido(new Pedido(cliente, plato)); // crear pedido
                 break;
+                case '4': // atender pedido
+                    r.atenderPedido(); // atiende pedido
+                break;
+                case '5': // mostrar pedidos
+                    r.mostrarPedidos(); // muestra cola
+                break;
+                case '6': // mostrar historial
+                    r.mostrarHistorial(); // muestra pila
+                break;
+            }
+        }
     }
-}
+   }
         
