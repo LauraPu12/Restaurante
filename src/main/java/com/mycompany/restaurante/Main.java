@@ -1,6 +1,7 @@
 
 package com.mycompany.restaurante;
-import java.util.Scanner; // permite leer datos del usuario
+import com.murcia.utils.Menu; // importa la clase Menu de la libreria
+import com.murcia.utils.Input; // importa clase para leer datos
 
 
 public class Main {
@@ -23,7 +24,7 @@ public class Main {
 
             opcion = sc.nextInt(); // lee la opción
            
-            sc.nextLine(); // limpia buffer
+            sc.nextLine(); // limpia
             
             switch(opcion){
                 
