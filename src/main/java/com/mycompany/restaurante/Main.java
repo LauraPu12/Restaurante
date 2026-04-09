@@ -32,5 +32,18 @@ public class Main {
 
                     r.agregarPlato(new Plato(nombre,precio)); // agrega plato
                 break;
+                case 2: // mostrar menu
+
+                    r.mostrarMenu(); // imprime menu
+                break;
+
+                case 3: // hacer pedido
+
+                    String cliente = Input.readString("Nombre cliente: "); // leer cliente
+                    String plato = Input.readString("Plato: "); // leer plato
+
+                    r.hacerPedido(new Pedido(cliente,plato)); // crear pedido
+                break;
+
    
 }
