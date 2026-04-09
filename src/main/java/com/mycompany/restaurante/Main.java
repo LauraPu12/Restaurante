@@ -56,8 +56,8 @@ public class Main {
 
             }
 
-    
-
+        }while(opcion != 0); // repite hasta que el usuario salga
+        
         }
-        }
-        }
+   
+}
