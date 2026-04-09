@@ -19,7 +19,18 @@ public class Main {
         menu.add("Salir"); // opcion 7
 
         int opcion; // variable opcion
-
         }
+    do{
+            opcion = menu.show(); // muestra menu y lee opcion
+
+            switch(opcion){
+
+                case 1: // agregar plato
+
+                    String nombre = Input.readString("Nombre del plato: "); // leer nombre
+                    double precio = Input.readDouble("Precio: "); // leer precio
+
+                    r.agregarPlato(new Plato(nombre,precio)); // agrega plato
+                break;
    
 }
