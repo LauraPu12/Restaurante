@@ -11,17 +11,10 @@ public class Main {
         Restaurante r = new Restaurante(); // crea el restaurante
 
         //opciones del menú
-        String[] opciones = {
-            "1. Agregar plato",
-            "2. Mostrar menu",
-            "3. Hacer pedido",
-            "4. Atender pedido",
-            "5. Mostrar pedidos",
-            "6. Mostrar historial",
-            "7. Salir"
-        };
+        String[] opciones = {"1. Agregar plato", "2. Mostrar menu", "3. Hacer pedido", 
+            "4. Atender pedido", "5. Mostrar pedidos", "6. Mostrar historial", "7. Salir"};
          // crea el menú usando el constructor
-        Menu menu = new Menu(opciones, '1', "-", "MENU RESTAURANTE");
+        Menu menu = new Menu(opciones, 'M', "", "MENU RESTAURANTE");
         char opcion; // variable 
 
         do {
