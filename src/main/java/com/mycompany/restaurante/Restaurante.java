@@ -30,6 +30,18 @@ public class Restaurante {
     public void hacerPedido(Pedido p){
         cola.agregarPedido(p); // agrega el pedido a la cola
     }
+    
+    // Método para atender el siguiente pedido
+    public void atenderPedido(){
+        Pedido p = cola.atenderPedido(); // saca el primer pedido de la cola
+
+        if(p != null){ // si sí había pedido
+            historial.push(p); // lo guarda en el historial
+            System.out.println("Pedido atendido: " + p.mostrar()); // muestra el pedido
+        }else{
+            System.out.println("No hay pedidos en la cola"); // mensaje si está vacía
+        }
+    }
 
 
 
