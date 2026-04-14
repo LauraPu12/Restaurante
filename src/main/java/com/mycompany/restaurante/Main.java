@@ -29,6 +29,15 @@ public class Main {
             if(opcion == '6')mostrarHisotrial();
         } while(opcion != '7'); // repetir hasta salir
     }
+     public static void agregarPlato() {//metodo
+        String nombre = Input.nextLine("Nombre del plato: "); // leer nombre
+        double precio = Input.nextInt("Precio: ", 0, 1000000); // leer precio
+        r.agregarPlato(new Plato(nombre, precio)); // agregar
+    }
+
+    public static void mostrarMenu() {//metodo
+        r.mostrarMenu(); 
+    }
     
    }
         
