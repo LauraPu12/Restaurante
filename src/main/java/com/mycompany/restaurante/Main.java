@@ -38,6 +38,21 @@ public class Main {
     public static void mostrarMenu() {//metodo
         r.mostrarMenu(); 
     }
-    
+     public static void hacerPedido() {
+        String cliente = Input.nextLine("Nombre cliente: "); // leer cliente
+        String plato = Input.nextLine("Plato: "); // leer plato
+        r.hacerPedido(new Pedido(cliente, plato)); 
+    }
+      public static void atenderPedido() {
+        r.atenderPedido(); // atender pedido
+    }
+
+    public static void mostrarPedidos() {
+        r.mostrarPedidos(); // mostrar cola
+    }
+
+    public static void mostrarHistorial() {
+        r.mostrarHistorial(); // mostrar pila
+    }
    }
         
