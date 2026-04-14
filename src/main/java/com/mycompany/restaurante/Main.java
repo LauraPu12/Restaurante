@@ -9,42 +9,26 @@ public class Main {
     public static void main(String[] args) {
 
         Restaurante r = new Restaurante(); // crea el restaurante
-
+        
+        final char Salir = '7';//opcion para salir
         //opciones del menú
         String[] opciones = {"1. Agregar plato", "2. Mostrar menu", "3. Hacer pedido", 
             "4. Atender pedido", "5. Mostrar pedidos", "6. Mostrar historial", "7. Salir"};
          // crea el menú usando el constructor
-        Menu menu = new Menu(opciones, 'M', "", "MENU RESTAURANTE");
+        Menu menu = new Menu(opciones, '1', "", "RESTAURANTE");
         char opcion; // variable 
 
         do {
-            opcion = menu.select("Seleccione una opción: "); // muestra menú y lee opción
-            switch(opcion){
-
-                case '1': // agregar plato
-                    String nombre = Input.nextLine("Nombre del plato: "); // leer nombre
-                    double precio = Input.nextInt("Precio: ", 0, 1000000); // leer precio
-                    r.agregarPlato(new Plato(nombre, precio)); // agregar plato
-                break;
-                 case '2': // mostrar menú
-                    r.mostrarMenu(); // imprime menú
-                break;
-                case '3': // hacer pedido
-                    String cliente = Input.nextLine("Nombre cliente: "); // leer cliente
-                    String plato = Input.nextLine("Plato: "); // leer plato
-                    r.hacerPedido(new Pedido(cliente, plato)); // crear pedido
-                break;
-                case '4': // atender pedido
-                    r.atenderPedido(); // atiende pedido
-                break;
-                case '5': // mostrar pedidos
-                    r.mostrarPedidos(); // muestra cola
-                break;
-                case '6': // mostrar historial
-                    r.mostrarHistorial(); // muestra pila
-                break;
-            }
+            opcion = menu.select("Seleccione una opcion: "); // muestra menú y lee opción
+            
+            if(opcion == '1')agregarPlato();
+            if(opcion == '2')mostrarMenu();
+            if(opcion == '3')hacerPedido();
+            if(opcion == '4')atenderPedido();
+            if(opcion == '5')mostrarPedidos();
+            if(opcion == '6')mostrarHisotrial();
         } while(opcion != '7'); // repetir hasta salir
     }
+    
    }
         
