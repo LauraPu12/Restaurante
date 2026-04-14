@@ -17,6 +17,6 @@ public class Pedido {
     }
     // Método para mostrar el pedido
     public String mostrar() {
-        return cliente + " pidió " + plato; // Retorna descripción del pedido
+        return cliente + " pidio " + plato; // Retorna descripción del pedido
     }
 }

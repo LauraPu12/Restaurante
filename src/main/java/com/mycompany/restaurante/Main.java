@@ -14,7 +14,7 @@ public class Main {
         String[] opciones = {"1. Agregar plato", "2. Mostrar menu", "3. Hacer pedido", 
             "4. Atender pedido", "5. Mostrar pedidos", "6. Mostrar historial", "7. Salir"};
          // crea el menú usando el constructor
-        Menu menu = new Menu(opciones, '1', "", "RESTAURANTE");
+        Menu menu = new Menu(opciones, '1', "\n", "RESTAURANTE");
         char opcion; // variable 
 
         do {
@@ -30,6 +30,7 @@ public class Main {
     }
      public static void agregarPlato() {//metodo
         String nombre = Input.nextLine("Nombre del plato: "); // leer nombre
+        Input.nextLine("");
         double precio = Input.nextInt("Precio: ", 0, 1000000); // leer precio
         r.agregarPlato(new Plato(nombre, precio)); // agregar
     }
@@ -38,6 +39,7 @@ public class Main {
     }
      public static void hacerPedido() {
         String cliente = Input.nextLine("Nombre cliente: "); // leer cliente
+        Input.nextLine("");
         String plato = Input.nextLine("Plato: "); // leer plato
         r.hacerPedido(new Pedido(cliente, plato)); 
     }
