@@ -11,6 +11,7 @@ public class Main {
 
         final char Salir = '7';//opcion para salir
         //opciones del menú
+        
         String[] opciones = {"1. Agregar plato", "2. Mostrar menu", "3. Hacer pedido", 
             "4. Atender pedido", "5. Mostrar pedidos", "6. Mostrar historial", "7. Salir",
             "8. Buscar pedido"};
@@ -21,7 +22,7 @@ public class Main {
 
         do {
             opcion = menu.select("Seleccione una opcion: "); // muestra menú y lee opción
-            
+            System.out.println("-----------------------------");
             if(opcion == '1')agregarPlato();
             if(opcion == '2')mostrarMenu();
             if(opcion == '3')hacerPedido();
