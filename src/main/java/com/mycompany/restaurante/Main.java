@@ -12,10 +12,12 @@ public class Main {
         final char Salir = '7';//opcion para salir
         //opciones del menú
         String[] opciones = {"1. Agregar plato", "2. Mostrar menu", "3. Hacer pedido", 
-            "4. Atender pedido", "5. Mostrar pedidos", "6. Mostrar historial", "7. Salir"};
+            "4. Atender pedido", "5. Mostrar pedidos", "6. Mostrar historial", "7. Salir",
+            "8. Buscar pedido"};
+        
          // crea el menú usando el constructor
         Menu menu = new Menu(opciones, '1', "\n", "RESTAURANTE");
-        char opcion; // variable 
+        char opcion; // variable que lee el programa
 
         do {
             opcion = menu.select("Seleccione una opcion: "); // muestra menú y lee opción
@@ -26,6 +28,7 @@ public class Main {
             if(opcion == '4')atenderPedido();
             if(opcion == '5')mostrarPedidos();
             if(opcion == '6')mostrarHistorial();
+            if(opcion == '8')buscarPedido(); // llama el metodo buscar pedido
         } while(opcion != Salir); // repetir hasta salir
     }
      public static void agregarPlato() {//metodo
@@ -51,6 +54,10 @@ public class Main {
     }
     public static void mostrarHistorial() {
         r.mostrarHistorial(); // mostrar pila
+    }
+    public static void buscarPedido() {
+        int id = Input.nextInt("ID del pedido: ", 0, 1000); // leer id a buscar
+        r.buscarPedido(id); // buscar pedido
     }
    }
         
