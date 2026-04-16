@@ -1,6 +1,6 @@
 
 package com.mycompany.restaurante;
-//import com.murcia.utils.Nodo; // importar nodo
+import com.murcia.utils.Nodo; // importar nodo
 
 public class Restaurante {
         

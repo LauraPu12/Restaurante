@@ -21,4 +21,23 @@ class ColaPedidos extends ColaEnlazada<Pedido> { //clase que hereda de ColaEnlaz
             actual = actual.getNext();// avanza al siguiente nodo
         }
     }
+    // Metodo para buscar pedido en la cola
+   public int buscarPedido(int id){
+    
+    Nodo<Pedido> actual = primero; // inicio de la cola
+    int posicion = 1; // posicion
+    
+    while(actual != null){
+        Pedido p = actual.getData(); // obtener pedido
+        
+        if(p.getId() == id){ // si coincide
+            return posicion; // retorna posicion
+        }
+        
+        actual = actual.getNext(); // avanzar
+        posicion++; // aumentar posicion
+    }
+    
+    return -1; // no encontrado
+}
 }

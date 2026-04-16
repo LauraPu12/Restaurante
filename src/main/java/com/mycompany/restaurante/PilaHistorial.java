@@ -32,4 +32,21 @@ public class PilaHistorial {
             ahora=ahora.getNext();//continua con el siguiente
         }
     }
+    // Metodo para buscar pedido en historial
+public boolean buscarPedido(int id){
+    
+    Nodo<Pedido> actual = primero; // cima de la pila
+    
+    while(actual != null){
+        Pedido p = actual.getData(); // obtener pedido
+        
+        if(p.getId() == id){ // si coincide
+            return true; // encontrado
+        }
+        
+        actual = actual.getNext(); // avanzar
+    }
+    
+    return false; // no encontrado
+}
 }
