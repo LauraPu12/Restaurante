@@ -24,7 +24,7 @@ class ColaPedidos extends ColaEnlazada<Pedido> { //clase que hereda de ColaEnlaz
     // Metodo para buscar pedido en la cola
    public int buscarPedido(int id){
     
-    Nodo<Pedido> actual = primero; // inicio de la cola
+    Nodo<Pedido> actual = head; // cima de la pila
     int posicion = 1; // posicion
     
     while(actual != null){
