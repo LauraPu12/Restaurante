@@ -40,11 +40,16 @@ public class Main {
     public static void mostrarMenu() {//metodo
         r.mostrarMenu(); 
     }
-     public static void hacerPedido() {
-        String cliente = Input.nextLine("Nombre cliente: "); // leer cliente
-        Input.nextLine("");
-        String plato = Input.nextLine("Plato: "); // leer plato
-        r.hacerPedido(new Pedido(id, cliente, plato)); // agregar pedido
+    public static void hacerPedido() {
+    
+    int id = Input.nextInt("ID del pedido: ", 0, 1000); // leer id
+    
+    String cliente = Input.nextLine("Nombre cliente: "); // leer cliente
+    Input.nextLine(""); // limpiar buffer
+    
+    String plato = Input.nextLine("Plato: "); // leer plato
+    
+    r.hacerPedido(new Pedido(id, cliente, plato)); // crear pedido
     }
       public static void atenderPedido() {
         r.atenderPedido(); // atender pedido

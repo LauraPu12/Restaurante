@@ -10,6 +10,11 @@ public class Pedido {
     // Constructor vacío
     public Pedido() {
     }
+    // Constructor anterior
+    public Pedido(String cliente, String plato) {
+        this.cliente = cliente; 
+        this.plato = plato; 
+    }
 
     // Constructor con parámetros
     public Pedido(int id, String cliente, String plato) {
