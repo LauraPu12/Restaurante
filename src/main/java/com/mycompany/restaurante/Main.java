@@ -44,7 +44,7 @@ public class Main {
         String cliente = Input.nextLine("Nombre cliente: "); // leer cliente
         Input.nextLine("");
         String plato = Input.nextLine("Plato: "); // leer plato
-        r.hacerPedido(new Pedido(id, cliente, plato)); 
+        r.hacerPedido(new Pedido(id, cliente, plato)); // agregar pedido
     }
       public static void atenderPedido() {
         r.atenderPedido(); // atender pedido

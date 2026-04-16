@@ -1,6 +1,6 @@
 
 package com.mycompany.restaurante;
-
+//import com.murcia.utils.Nodo; // importar nodo
 
 public class Restaurante {
         
@@ -54,5 +54,26 @@ public class Restaurante {
     public void mostrarHistorial(){
         historial.mostrarHistorial(); // muestra la pila
     }
+    
+    // Metodo para buscar pedido por id
+    public void buscarPedido(int id){
+        
+        Nodo<Pedido> actual = cola.primero; // recorrer cola de pedidos
+        int posicion = 1; // posicion del pedido
+        
+        while(actual != null){
+            Pedido p = actual.getData(); // obtener pedido actual
+            
+            if(p.getId() == id){ // verificar si coincide el id
+                System.out.println("-----------------------------");
+                System.out.println("Pedido: " + p.mostrar()); // mostrar pedido
+                System.out.println("Estado: En espera"); // mostrar estado
+                System.out.println("Posicion en cola: " + posicion); // mostrar posicion
+                return; // terminar busqueda
+            }
+            
+            actual = actual.getNext(); // avanzar al siguiente nodo
+            posicion++; // aumentar posicion
+        }
 
 }
