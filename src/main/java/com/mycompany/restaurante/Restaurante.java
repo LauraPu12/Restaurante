@@ -75,5 +75,23 @@ public class Restaurante {
             actual = actual.getNext(); // avanzar al siguiente nodo
             posicion++; // aumentar posicion
         }
-
+        
+        Nodo<Pedido> actual2 = historial.primero; // recorrer historial
+        
+        while(actual2 != null){
+            Pedido p = actual2.getData(); // obtener pedido
+            
+            if(p.getId() == id){ // verificar id
+                System.out.println("-----------------------------");
+                System.out.println("Pedido: " + p.mostrar()); // mostrar pedido
+                System.out.println("Estado: Atendido"); // mostrar estado
+                return; // terminar busqueda
+            }
+            
+            actual2 = actual2.getNext(); // avanzar nodo
+        }
+        
+        System.out.println("-----------------------------");
+        System.out.println("Pedido no encontrado"); // mensaje si no existe
+    }
 }
